@@ -15,7 +15,7 @@ function Navbar() {
         <div className="flex justify-center items-center gap-3">
           <CustomButton
             title="Biro Kesekretariatan"
-            style=" ghost bg-white text-black hover:bg-transparent"
+            style=" ghost bg-transparent text-white hover:bg-white hover:text-black"
           />
           <Dropdown />
           <CustomButton title="Contact Us" style=" bg-green" />

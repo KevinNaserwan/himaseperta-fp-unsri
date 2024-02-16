@@ -19,17 +19,23 @@ export function Dropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost">Departemen</Button>
+        <Button variant="ghost" className=" text-white">Departemen</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
-        <DropdownMenuLabel>Panel Position</DropdownMenuLabel>
+        <DropdownMenuLabel>Departemen</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
-          <DropdownMenuRadioItem value="top">
+          <DropdownMenuRadioItem value="kewirausahaan">
             Kewirausahaan
           </DropdownMenuRadioItem>
-          <DropdownMenuRadioItem value="bottom">PPSDM</DropdownMenuRadioItem>
-          <DropdownMenuRadioItem value="right">Right</DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="ppsdm"><a href="/ppsdm">PPSDM</a></DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="humas">Humas</DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="sosmas">Sosmas</DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="kerohanian">
+            Kerohanian
+          </DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="kominfo">Kominfo</DropdownMenuRadioItem>
+          <DropdownMenuRadioItem value="mikat">Mikat</DropdownMenuRadioItem>
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
     </DropdownMenu>
